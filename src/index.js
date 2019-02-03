@@ -41,7 +41,7 @@ class App extends React.Component {
 
 	// React says you must define render()
 	render() {
-		return <div>{this.renderContent()}</div>;
+		return <div className="fake-one">{this.renderContent()}</div>;
 	}
 }
 
