@@ -30,7 +30,11 @@ class App extends React.Component {
 
 	renderContent() {
 		if (this.state.errorMsg && !this.state.lat) {
-			return <div>Error: {this.state.errorMsg}</div>;
+			return (
+				<div style={{ color: "red" }}>
+					<h1>Error: {this.state.errorMsg}</h1>
+				</div>
+			);
 		}
 		if (!this.state.errorMsg && this.state.lat) {
 			// return <div>Latitude: {this.state.lat}</div>;
